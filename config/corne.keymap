@@ -17,6 +17,18 @@
 #define ADJ 3
 #define CTL 4
 
+#define BT_SEL0 BT_SEL 0
+#define BT_SEL1 BT_SEL 1
+#define BT_SEL2 BT_SEL 2
+#define BT_SEL3 BT_SEL 3
+#define BT_SEL4 BT_SEL 4
+
+#define BT_DC0 BT_DISC 0
+#define BT_DC1 BT_DISC 1
+#define BT_DC2 BT_DISC 2
+#define BT_DC3 BT_DISC 3
+#define BT_DC4 BT_DISC 4
+
 // Behavior configuration
 &mt {
     tapping-term-ms = <165>;
@@ -39,7 +51,7 @@
             bindings = <
     &kp ESC         &kp Q       &kp W       &kp E          &kp R          &kp T                &kp Y          &kp U         &kp I          &kp O         &kp P          &kp BSPC
     &mt LSHFT TAB   &mt LGUI A  &kp S       &kp D          &kp F          &kp G                &kp H          &kp J         &kp K          &kp L         &kp SEMI       &kp SQT
-    &mt LALT MINUS  &kp Z       &kp X       &kp C          &kp V          &kp B                &kp N          &kp M         &kp CMMA       &kp DOT       &kp FSLH       &kp EQUAL
+    &mt LALT MINUS  &kp Z       &kp X       &kp C          &kp V          &kp B                &kp N          &kp M         &kp COMMA      &kp DOT       &kp FSLH       &kp EQUAL
                                           &trans       &kp LSHFT   &mt LCTRL SPACE          &lt LWR SPACE  &lt RAI ENTER  &mt LALT DEL
             >;
         };
@@ -48,7 +60,7 @@
             bindings = <
     &kp ESC         &kp N1      &kp N2      &kp N3         &kp N4         &kp N5               &kp N6         &kp N7        &kp N8         &kp N9        &kp N0         &kp BSPC
     &mt LSHFT TAB   &kp LGUI    &kp HOME    &kp PG_UP      &kp PG_DN      &kp END              &kp LEFT       &kp DOWN      &kp UP         &kp RIGHT     &kp SEMI       &kp SQT
-    &mt LALT MINUS  &trans      &trans      &trans         &trans         &kp INS              &trans         &trans        &kp CMMA       &kp DOT       &kp FSLH       &kp EQUAL
+    &mt LALT MINUS  &trans      &trans      &trans         &trans         &kp INS              &trans         &trans        &kp COMMA      &kp DOT       &kp FSLH       &kp EQUAL
                                            &trans       &kp LSHFT   &mt LCTRL SPACE          &trans         &lt LWR ENTER  &mt LALT DEL
             >;
         };
@@ -57,14 +69,14 @@
             bindings = <
     &kp ESC         &kp EXCL    &kp AT      &kp HASH       &kp DLLR       &kp PRCNT            &kp CARET      &kp AMPS      &kp STAR       &kp LPAR      &kp RPAR       &kp BSPC
     &mt LSHFT TAB   &kp PIPE    &kp LPAR    &kp LBKT       &kp LCUR       &kp MINUS            &kp EQUAL      &kp RCUR      &kp RBKT       &kp RPAR      &mo ADJ        &kp SQT
-    &mt LALT MINUS  &kp BSLH    &kp TILDE   &kp GRAVE      &kp PLUS       &trans               &trans         &kp UNDER     &kp CMMA       &kp DOT       &kp FSLH       &kp EQUAL
+    &mt LALT MINUS  &kp BSLH    &kp TILDE   &kp GRAVE      &kp PLUS       &trans               &trans         &kp UNDER     &kp COMMA      &kp DOT       &kp FSLH       &kp EQUAL
                                            &trans       &kp LSHFT   &mt LCTRL SPACE          &trans         &lt LWR ENTER  &mt LALT DEL
             >;
         };
 
         adjust {
             bindings = <
-    &kp ESC         &kp F1      &kp F2      &kp F3         &kp F4         &trans               &trans         &trans        &trans         &trans        &trans       &kp BSPC
+    &kp ESC         &kp F1      &kp F2      &kp F3         &kp F4         &trans               &trans         &trans        &mo CTL        &trans        &trans       &kp BSPC
     &mt LSHFT TAB   &kp F5      &kp F6      &kp F7         &kp F8         &trans               &trans         &kp C_MUTE    &kp C_VOL_UP   &kp C_VOL_DN  &trans       &trans
     &mt LALT MINUS  &kp F9      &kp F10     &kp F11        &kp F12        &trans               &trans         &kp PSCRN     &kp C_BRI_INC  &kp C_BRI_DEC &trans       &trans
                                            &trans       &kp LSHFT   &mt LCTRL SPACE          &trans         &trans         &mt LALT DEL
@@ -74,8 +86,8 @@
         ctl {
             bindings = <
     &trans          &trans      &trans      &trans         &trans         &trans               &trans         &trans        &trans         &trans        &trans         &trans
-    &trans          &trans      &trans      &trans         &trans         &trans               &trans         &trans        &trans         &trans        &trans         &trans
-    &trans          &trans      &trans      &trans         &trans         &trans               &trans         &trans        &trans         &trans        &trans         &trans
+    &bt BT_CLR      &bt BT_SEL0 &bt BT_SEL1 &bt BT_SEL2    &bt BT_SEL3    &bt BT_SEL4          &trans         &trans        &trans         &trans        &trans         &trans
+    &trans          &bt BT_DC0  &bt BT_DC1  &bt BT_DC2     &bt BT_DC3     &bt BT_DC4           &trans         &trans        &trans         &trans        &trans         &trans
                                            &trans       &trans      &trans                   &trans         &trans         &trans 
             >;
         };
