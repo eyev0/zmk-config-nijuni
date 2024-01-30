@@ -15,6 +15,7 @@
 #define LWR 1
 #define RAI 2
 #define ADJ 3
+#define CTL 4
 
 // Behavior configuration
 &mt {
@@ -42,12 +43,40 @@
                                           &trans       &kp LSHFT   &mt LCTRL SPACE          &lt LWR SPACE  &lt RAI ENTER  &mt LALT DEL
             >;
         };
+
         lower {
             bindings = <
     &kp ESC         &kp N1      &kp N2      &kp N3         &kp N4         &kp N5               &kp N6         &kp N7        &kp N8         &kp N9        &kp N0         &kp BSPC
     &mt LSHFT TAB   &kp LGUI    &kp HOME    &kp PG_UP      &kp PG_DN      &kp END              &kp LEFT       &kp DOWN      &kp UP         &kp RIGHT     &kp SEMI       &kp SQT
     &mt LALT MINUS  &trans      &trans      &trans         &trans         &kp INS              &trans         &trans        &kp CMMA       &kp DOT       &kp FSLH       &kp EQUAL
                                            &trans       &kp LSHFT   &mt LCTRL SPACE          &trans         &lt LWR ENTER  &mt LALT DEL
+            >;
+        };
+
+        raise {
+            bindings = <
+    &kp ESC         &kp EXCL    &kp AT      &kp HASH       &kp DLLR       &kp PRCNT            &kp CARET      &kp AMPS      &kp STAR       &kp LPAR      &kp RPAR       &kp BSPC
+    &mt LSHFT TAB   &kp PIPE    &kp LPAR    &kp LBKT       &kp LCUR       &kp MINUS            &kp EQUAL      &kp RCUR      &kp RBKT       &kp RPAR      &mo ADJ        &kp SQT
+    &mt LALT MINUS  &kp BSLH    &kp TILDE   &kp GRAVE      &kp PLUS       &trans               &trans         &kp UNDER     &kp CMMA       &kp DOT       &kp FSLH       &kp EQUAL
+                                           &trans       &kp LSHFT   &mt LCTRL SPACE          &trans         &lt LWR ENTER  &mt LALT DEL
+            >;
+        };
+
+        adjust {
+            bindings = <
+    &kp ESC         &kp F1      &kp F2      &kp F3         &kp F4         &trans               &trans         &trans        &trans         &trans        &trans       &kp BSPC
+    &mt LSHFT TAB   &kp F5      &kp F6      &kp F7         &kp F8         &trans               &trans         &kp C_MUTE    &kp C_VOL_UP   &kp C_VOL_DN  &trans       &trans
+    &mt LALT MINUS  &kp F9      &kp F10     &kp F11        &kp F12        &trans               &trans         &kp PSCRN     &kp C_BRI_INC  &kp C_BRI_DEC &trans       &trans
+                                           &trans       &kp LSHFT   &mt LCTRL SPACE          &trans         &trans         &mt LALT DEL
+            >;
+        };
+
+        ctl {
+            bindings = <
+    &trans          &trans      &trans      &trans         &trans         &trans               &trans         &trans        &trans         &trans        &trans         &trans
+    &trans          &trans      &trans      &trans         &trans         &trans               &trans         &trans        &trans         &trans        &trans         &trans
+    &trans          &trans      &trans      &trans         &trans         &trans               &trans         &trans        &trans         &trans        &trans         &trans
+                                           &trans       &trans      &trans                   &trans         &trans         &trans 
             >;
         };
     };
