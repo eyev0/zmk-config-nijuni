@@ -96,8 +96,8 @@
 
         ctl {
             bindings = <
-    &trans          &trans      &trans      &trans         &trans         &trans               &trans         &trans        &trans         &trans        &trans         &trans
-    &bt BT_CLR_ALL  &bt BT_SEL0 &bt BT_SEL1 &bt BT_SEL2    &bt BT_SEL3    &bt BT_SEL4          &trans         &trans        &trans         &trans        &trans         &trans
+    &bt BT_CLR_ALL  &trans      &trans      &trans         &trans         &trans               &trans         &trans        &trans         &trans        &trans         &trans
+    &trans          &bt BT_SEL0 &bt BT_SEL1 &bt BT_SEL2    &bt BT_SEL3    &bt BT_SEL4          &trans         &trans        &trans         &trans        &trans         &trans
     &trans          &bt BT_DC0  &bt BT_DC1  &bt BT_DC2     &bt BT_DC3     &bt BT_DC4           &trans         &trans        &trans         &trans        &trans         &trans
                                            &kp RCTRL      &trans      &trans                   &trans         &trans         &trans 
             >;
