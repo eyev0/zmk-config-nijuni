@@ -61,9 +61,9 @@
         qwerty {
             bindings = <
     &kp ESC         &kp Q       &kp W       &kp E          &kp R          &kp T                &kp Y          &kp U         &kp I          &kp O         &kp P          &kp BSPC
-    &mt LSHFT TAB   &hm LGUI A  &kp S       &kp D          &kp F          &kp G                &kp H          &kp J         &kp K          &kp L         &kp SEMI       &kp SQT
+    &mt LSHFT TAB   &hm LGUI A  &hm LSHFT S &hm LALT D     &kp F          &kp G                &kp H          &kp J         &kp K          &kp L         &kp SEMI       &kp SQT
     &mt LALT MINUS  &kp Z       &kp X       &kp C          &kp V          &kp B                &kp N          &kp M         &kp COMMA      &kp DOT       &kp FSLH       &kp EQUAL
-                                           &kp RCTRL      &kp LSHFT   &mt LCTRL SPACE          &lt LWR SPACE  &lt RAI ENTER  &mt LALT DEL
+                                           &kp RCTRL      &kp LGUI   &mt LCTRL SPACE          &lt LWR SPACE  &lt RAI ENTER  &mt LALT DEL
             >;
         };
 
