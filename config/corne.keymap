@@ -61,46 +61,46 @@
 
         qwerty {
             bindings = <
-    &kp ESC         &kp Q       &kp W       &kp E          &kp R          &kp T                &kp Y          &kp U         &kp I          &kp O         &kp P          &kp BSPC
-    &mt LSHFT TAB   &hm LGUI A  &hm LSHFT S &hm LALT D     &kp F          &kp G                &kp H          &kp J         &kp K          &kp L         &kp SEMI       &kp SQT
-    &mt LALT MINUS  &kp Z       &kp X       &kp C          &kp V          &kp B                &kp N          &kp M         &kp COMMA      &kp DOT       &kp FSLH       &kp EQUAL
-                                              &kp RCTRL      &kp LGUI   &mt LCTRL SPACE      &lt LWR SPACE  &lt RAI ENTER &mt LALT DEL
+    &kp ESC         &kp Q         &kp W          &kp E          &kp R          &kp T                &kp Y          &kp U         &kp I          &kp O         &kp P          &kp BSPC
+    &mt LSHFT TAB   &hm LGUI A    &hm LSHFT S    &hm LALT D     &hm LGUI F     &kp G                &kp H          &kp J         &kp K          &kp L         &kp SEMI       &kp SQT
+    &mt LALT MINUS  &kp Z         &kp X          &kp C          &kp V          &kp B                &kp N          &kp M         &kp COMMA      &kp DOT       &kp FSLH       &kp EQUAL
+                                                   &kp RCTRL      &kp LSHFT  &mt LCTRL SPACE      &lt LWR SPACE  &lt RAI ENTER &mt LALT DEL
             >;
         };
 
         lower {
             bindings = <
-    &trans          &kp N1      &kp N2      &kp N3         &kp N4         &kp N5               &kp N6         &kp N7        &kp N8         &kp N9        &kp N0         &trans
-    &trans          &kp LGUI    &kp HOME    &kp PG_UP      &kp PG_DN      &kp END              &kp LEFT       &kp DOWN      &kp UP         &kp RIGHT     &kp SEMI       &trans
-    &trans          &trans      &trans      &trans         &trans         &kp INS              &trans         &trans        &trans         &trans        &trans         &trans
-                                              &trans         &trans         &trans           &trans         &trans        &trans
+    &trans          &kp N1        &kp N2         &kp N3         &kp N4         &kp N5               &kp N6         &kp N7        &kp N8         &kp N9        &kp N0         &trans
+    &trans          &kp LGUI      &hm LSHFT HOME &hm LALT PG_UP &hm LGUI PG_DN &kp END              &kp LEFT       &kp DOWN      &kp UP         &kp RIGHT     &kp SEMI       &trans
+    &trans          &trans        &trans         &trans         &trans         &kp INS              &trans         &trans        &trans         &trans        &trans         &trans
+                                                   &trans         &trans         &trans           &trans         &trans        &trans
             >;
         };
 
         raise {
             bindings = <
-    &trans          &kp EXCL    &kp AT      &kp HASH       &kp DLLR       &kp PRCNT            &kp CARET      &kp AMPS      &kp STAR       &kp LPAR      &kp RPAR       &trans
-    &trans          &kp PIPE    &kp LPAR    &kp LBKT       &kp LCUR       &kp MINUS            &kp EQUAL      &kp RCUR      &kp RBKT       &kp RPAR      &mo ADJ        &trans
-    &trans          &kp BSLH    &kp TILDE   &kp GRAVE      &kp PLUS       &trans               &trans         &kp UNDER     &trans         &trans        &trans         &trans
-                                              &trans         &trans         &trans           &trans         &trans        &trans
+    &trans          &kp EXCL      &kp AT         &kp HASH       &kp DLLR       &kp PRCNT            &kp CARET      &kp AMPS      &kp STAR       &kp LPAR      &kp RPAR       &trans
+    &trans          &hm LGUI PIPE &hm LSHFT LPAR &hm LALT LBKT  &hm LGUI LCUR  &kp MINUS            &kp EQUAL      &kp RCUR      &kp RBKT       &kp RPAR      &mo ADJ        &trans
+    &trans          &kp BSLH      &kp TILDE      &kp GRAVE      &kp PLUS       &trans               &trans         &kp UNDER     &trans         &trans        &trans         &trans
+                                                   &trans         &trans         &trans           &trans         &trans        &trans
             >;
         };
 
         adjust {
             bindings = <
-    &trans          &kp F1      &kp F2      &kp F3         &kp F4         &trans               &trans         &trans        &mo CTL        &trans        &trans         &trans
-    &trans          &kp F5      &kp F6      &kp F7         &kp F8         &trans               &trans         &kp C_MUTE    &kp C_VOL_UP   &kp C_VOL_DN  &trans         &trans
-    &trans          &kp F9      &kp F10     &kp F11        &kp F12        &trans               &trans         &kp PSCRN     &kp C_BRI_INC  &kp C_BRI_DEC &trans         &trans
-                                              &trans         &trans         &trans           &trans         &trans        &trans
+    &trans          &kp F1        &kp F2         &kp F3         &kp F4         &trans               &trans         &trans        &mo CTL        &trans        &trans         &trans
+    &trans          &hm LGUI F5   &hm LSHFT F6   &hm LALT F7    &hm LGUI F8    &trans               &trans         &kp C_MUTE    &kp C_VOL_DN   &kp C_VOL_UP  &trans         &trans
+    &trans          &kp F9        &kp F10        &kp F11        &kp F12        &trans               &trans         &kp PSCRN     &kp C_BRI_DEC  &kp C_BRI_INC &trans         &trans
+                                                   &trans         &trans         &trans           &trans         &trans        &trans
             >;
         };
 
         ctl {
             bindings = <
-    &bt BT_CLR_ALL  &trans      &trans      &trans         &trans         &trans               &trans         &trans        &trans         &trans        &trans         &trans
-    &bt BT_CLR      &bt BT_SEL0 &bt BT_SEL1 &bt BT_SEL2    &bt BT_SEL3    &bt BT_SEL4          &trans         &trans        &trans         &trans        &trans         &trans
-    &trans          &bt BT_DC0  &bt BT_DC1  &bt BT_DC2     &bt BT_DC3     &bt BT_DC4           &trans         &trans        &trans         &trans        &trans         &trans
-                                              &trans         &trans         &trans           &trans         &trans        &trans
+    &bt BT_CLR_ALL  &trans        &trans         &trans         &trans         &trans               &trans         &trans        &trans         &trans        &trans         &trans
+    &bt BT_CLR      &bt BT_SEL0   &bt BT_SEL1    &bt BT_SEL2    &bt BT_SEL3    &bt BT_SEL4          &trans         &trans        &trans         &trans        &trans         &trans
+    &trans          &bt BT_DC0    &bt BT_DC1     &bt BT_DC2     &bt BT_DC3     &bt BT_DC4           &trans         &trans        &trans         &trans        &trans         &trans
+                                                   &trans         &trans         &trans           &trans         &trans        &trans
             >;
         };
     };
